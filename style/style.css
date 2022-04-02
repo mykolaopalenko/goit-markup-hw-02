@@ -12,12 +12,12 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--ffroboto), sans-serif;
   color: var(--maincolor);
 }
 
 .logo {
-  font-family: var(--fflogo);
+  font-family: var(--ffraleway);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -80,6 +80,8 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  align-items: center;
+  text-align: center;
   width: 200px;
   height: 50px;
   color: var(--logotext);
@@ -88,18 +90,27 @@ body {
   border: none;
   cursor: pointer;
 }
-.about-button:hover,
-.about-button:focus {
+.about-button:hover {
   background-color: var(--aboutbuttonhover);
-  color: #2f303a;
+  color: var(--bgcolor);
 }
+  .about-button:focus {
+     background-color: var(--maincolor2);
+  }
+
 .hide {
   display: none;
+}
+
+.info,
+.doing_list,
+.teamphoto {
+  list-style-type: none;
 }
 .info-name {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -114,23 +125,28 @@ body {
 .button:focus {
   background-color: var(--maincolor2);
   color: var(--logotext);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .doing-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .ourteam {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  font-weight: 500;
 }
 .position {
   font-weight: 400;
@@ -169,11 +185,9 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--infocolor);
-
-  letter-spacing: 0.03em;
 }
 .footer {
-  background-color: #2f303a;
+  background-color: var(--bgcolor);
 }
 .address :hover,
 .address :focus,
@@ -184,7 +198,7 @@ body {
   color: var(--maincolor2);
 }
 .logo-footer {
-  font-family: var(--fflogo);
+  font-family: var(--ffraleway);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -202,7 +216,7 @@ body {
   list-style-type: none;
 }
 .address-url {
-  font-family: "Roboto";
+  font-family: var(--ffroboto);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
