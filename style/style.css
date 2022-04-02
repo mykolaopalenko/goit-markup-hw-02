@@ -170,6 +170,11 @@ body {
 .navigation {
   list-style-type: none;
 }
+.navigation-item_block{
+   width: 370px;
+height: 404px;
+border: 1px solid #EEEEEE;
+}
 .navigation-item {
   list-style-type: none;
 }
